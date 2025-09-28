@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /about/
 title:
   en: "About Us"
   vi: "Về chúng tôi"
