@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang.default }}" data-theme="{{ site.site_theme.default }}">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include header.html %}
+  
+  <main class="main-content">
+    {{ content }}
+  </main>
+  
+  {% include footer.html %}
+  
+  <script src="{{ '/assets/js/lang.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  <script>
+    // Initialize language from URL param or localStorage
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    const storedLang = localStorage.getItem('lang');
+    const currentLang = langParam || storedLang || '{{ site.lang.default }}';
+    
+    if (currentLang !== '{{ site.lang.default }}') {
+      document.documentElement.setAttribute('data-lang', currentLang);
+    }
+    
+    // Set global language variable for Jekyll templates
+    window.CURRENT_LANG = currentLang;
+  </script>
+</body>
+</html>

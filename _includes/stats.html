@@ -1,0 +1,36 @@
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        {% assign pub_count = site.publications | size %}
+        <div class="stat-number with-plus">{% if pub_count > 0 %}{{ pub_count }}{% else %}18{% endif %}</div>
+        <div class="stat-label" data-lang-en="{{ site.data.sitecopy.stats.publications.en }}" data-lang-vi="{{ site.data.sitecopy.stats.publications.vi }}">
+          {{ site.data.sitecopy.stats.publications.en }}
+        </div>
+      </div>
+      
+      <div class="stat-item">
+        {% assign member_count = site.data.members | size %}
+        <div class="stat-number">{% if member_count > 0 %}{{ member_count }}{% else %}30{% endif %}</div>
+        <div class="stat-label" data-lang-en="{{ site.data.sitecopy.stats.members.en }}" data-lang-vi="{{ site.data.sitecopy.stats.members.vi }}">
+          {{ site.data.sitecopy.stats.members.en }}
+        </div>
+      </div>
+      
+      <div class="stat-item">
+        {% assign partner_count = site.data.partners | size %}
+        <div class="stat-number with-plus">{% if partner_count > 0 %}{{ partner_count }}{% else %}8{% endif %}</div>
+        <div class="stat-label" data-lang-en="{{ site.data.sitecopy.stats.collaborations.en }}" data-lang-vi="{{ site.data.sitecopy.stats.collaborations.vi }}">
+          {{ site.data.sitecopy.stats.collaborations.en }}
+        </div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-number">4</div>
+        <div class="stat-label" data-lang-en="Research Areas" data-lang-vi="Lĩnh vực nghiên cứu">
+          Research Areas
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

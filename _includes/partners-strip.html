@@ -1,0 +1,31 @@
+<section class="partners-section">
+  <div class="container">
+    <h2 class="section-title" data-lang-en="{{ site.data.sitecopy.our_partners.en }}" data-lang-vi="{{ site.data.sitecopy.our_partners.vi }}">
+      {{ site.data.sitecopy.our_partners.en }}
+    </h2>
+    
+    <div class="partners-slider">
+      <button class="slider-btn slider-prev" aria-label="Previous partners">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15,18 9,12 15,6"></polyline>
+        </svg>
+      </button>
+      
+      <div class="partners-track">
+        {% for partner in site.data.partners %}
+          <div class="partner-item">
+            <a href="{{ partner.url }}" target="_blank" rel="noopener">
+              <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}" loading="lazy">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+      
+      <button class="slider-btn slider-next" aria-label="Next partners">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9,18 15,12 9,6"></polyline>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>

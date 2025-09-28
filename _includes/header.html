@@ -1,0 +1,66 @@
+<header class="site-header">
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="{{ '/' | relative_url }}" class="brand-link">
+          <img src="{{ site.brand.logo_horizontal | relative_url }}" alt="{{ site.title }}" class="brand-logo">
+        </a>
+      </div>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="navbar-menu">
+        <ul class="navbar-nav">
+          {% for item in site.data.nav.main %}
+            <li class="nav-item{% if item[1].submenu %} has-dropdown{% endif %}">
+              <a href="{{ item[1].url | relative_url }}" class="nav-link" data-lang-en="{{ item[1].en }}" data-lang-vi="{{ item[1].vi }}">
+                {{ item[1].en }}
+              </a>
+              {% if item[1].submenu %}
+                <ul class="dropdown-menu">
+                  {% for subitem in item[1].submenu %}
+                    <li>
+                      <a href="{{ subitem[1].url | relative_url }}" class="dropdown-link" data-lang-en="{{ subitem[1].en }}" data-lang-vi="{{ subitem[1].vi }}">
+                        {{ subitem[1].en }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        
+        <div class="navbar-actions">
+          {% if site.site_theme.allow_toggle %}
+            <button class="theme-toggle" aria-label="Toggle theme">
+              <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+          {% endif %}
+          
+          <!-- Language Switcher -->
+          <div class="header-lang-switcher">
+            {% include lang-switcher.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,22 @@
+<div class="card member-card">
+  <div class="member-avatar">
+    {% if include.item.profile_image %}
+    <img src="{{ include.item.profile_image | relative_url }}" alt="{{ include.item.name.en }}" loading="lazy">
+    {% endif %}
+  </div>
+  
+  <div class="member-info">
+    <h3 class="member-name" data-lang-en="{{ include.item.name.en }}" data-lang-vi="{{ include.item.name.vi }}">
+      {{ include.item.name.en }}
+    </h3>
+    
+    <p class="member-role">{{ include.item.role }}</p>
+    
+    <div class="member-actions">
+      {% if include.item.web_personal %}
+      <a href="{{ include.item.web_personal }}" target="_blank" class="btn btn-sm btn-outline">Website</a>
+      {% endif %}
+      <a href="{{ include.item.url | relative_url }}" class="btn btn-sm btn-primary">Profile</a>
+    </div>
+  </div>
+</div>

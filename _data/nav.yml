@@ -1,0 +1,74 @@
+main:
+  home:
+    en: "Home"
+    vi: "Trang chủ"
+    url: "/"
+  about:
+    en: "About Us"
+    vi: "Về chúng tôi"
+    url: "/about/"
+  research:
+    en: "Research"
+    vi: "Nghiên cứu"
+    url: "/research/projects/"
+    submenu:
+      projects:
+        en: "Research Projects"
+        vi: "Dự án nghiên cứu"
+        url: "/research/projects/"
+      publications:
+        en: "Publications"
+        vi: "Công bố khoa học"
+        url: "/research/publications/"
+      funding:
+        en: "Funding"
+        vi: "Tài trợ"
+        url: "/research/funding/"
+  members:
+    en: "Members"
+    vi: "Thành viên"
+    url: "/members/"
+    submenu:
+      team:
+        en: "Our Team"
+        vi: "Đội ngũ của chúng tôi"
+        url: "/members/"
+  activities:
+    en: "Activities"
+    vi: "Hoạt động"
+    url: "/activities/news/"
+    submenu:
+      news:
+        en: "News"
+        vi: "Tin tức"
+        url: "/activities/news/"
+      blogs:
+        en: "Blogs"
+        vi: "Blog"
+        url: "/activities/blogs/"
+  opportunities:
+    en: "Opportunities"
+    vi: "Cơ hội"
+    url: "/opportunities/gatherings/"
+    submenu:
+      gatherings:
+        en: "Lab Gatherings"
+        vi: "Gặp gỡ phòng lab"
+        url: "/opportunities/gatherings/"
+      careers:
+        en: "Career Growth"
+        vi: "Phát triển sự nghiệp"
+        url: "/opportunities/careers/"
+  resources:
+    en: "Resources"
+    vi: "Tài nguyên"
+    url: "/resources/data/"
+    submenu:
+      data:
+        en: "Data"
+        vi: "Dữ liệu"
+        url: "/resources/data/"
+      code:
+        en: "Code"
+        vi: "Mã nguồn"
+        url: "/resources/code/"

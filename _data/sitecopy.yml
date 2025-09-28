@@ -1,0 +1,55 @@
+tagline:
+  en: "Advancing the frontiers of artificial intelligence through innovative research"
+  vi: "Mở rộng biên giới của trí tuệ nhân tạo thông qua nghiên cứu đổi mới"
+
+recent_projects:
+  en: "Recent Projects"
+  vi: "Dự án gần đây"
+
+stats:
+  publications:
+    en: "Publications"
+    vi: "Công bố"
+  members:
+    en: "Members"
+    vi: "Thành viên"
+  collaborations:
+    en: "Collaborations"
+    vi: "Hợp tác"
+
+read_more:
+  en: "Read More"
+  vi: "Đọc thêm"
+
+view_all:
+  en: "View All"
+  vi: "Xem tất cả"
+
+latest_news:
+  en: "Latest News"
+  vi: "Tin tức mới nhất"
+
+latest_blogs:
+  en: "Latest Blogs"
+  vi: "Blog mới nhất"
+
+our_partners:
+  en: "Our Partners"
+  vi: "Đối tác của chúng tôi"
+
+contact_us:
+  en: "Contact Us"
+  vi: "Liên hệ"
+
+footer:
+  copyright:
+    en: "© 2025 Business AI Lab. All rights reserved."
+    vi: "© 2025 Phòng nghiên cứu AI trong kinh doanh. Bảo lưu mọi quyền."
+
+theme_toggle:
+  light:
+    en: "Switch to light mode"
+    vi: "Chuyển sang chế độ sáng"
+  dark:
+    en: "Switch to dark mode"
+    vi: "Chuyển sang chế độ tối"

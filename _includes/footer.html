@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>{{ site.title }}</h3>
+        <p class="footer-description" data-lang-en="{{ site.data.sitecopy.tagline.en }}" data-lang-vi="{{ site.data.sitecopy.tagline.vi }}">
+          {{ site.data.sitecopy.tagline.en }}
+        </p>
+      </div>
+      
+      <div class="footer-links">
+        <h4 data-lang-en="Quick Links" data-lang-vi="Liên kết nhanh">Quick Links</h4>
+        <ul>
+          <li><a href="{{ '/about/' | relative_url }}" data-lang-en="{{ site.data.nav.main.about.en }}" data-lang-vi="{{ site.data.nav.main.about.vi }}">{{ site.data.nav.main.about.en }}</a></li>
+          <li><a href="{{ '/research/projects/' | relative_url }}" data-lang-en="{{ site.data.nav.main.research.submenu.projects.en }}" data-lang-vi="{{ site.data.nav.main.research.submenu.projects.vi }}">{{ site.data.nav.main.research.submenu.projects.en }}</a></li>
+          <li><a href="{{ '/members/' | relative_url }}" data-lang-en="{{ site.data.nav.main.members.submenu.team.en }}" data-lang-vi="{{ site.data.nav.main.members.submenu.team.vi }}">{{ site.data.nav.main.members.submenu.team.en }}</a></li>
+          <li><a href="{{ '/activities/news/' | relative_url }}" data-lang-en="{{ site.data.nav.main.activities.submenu.news.en }}" data-lang-vi="{{ site.data.nav.main.activities.submenu.news.vi }}">{{ site.data.nav.main.activities.submenu.news.en }}</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h4 data-lang-en="{{ site.data.sitecopy.contact_us.en }}" data-lang-vi="{{ site.data.sitecopy.contact_us.vi }}">{{ site.data.sitecopy.contact_us.en }}</h4>
+        <p>
+          Business AI Lab<br>
+          National Economic University, Room A1-1210<br>
+          Hanoi, Vietnam 12345<br>
+          Email: businessailab.neu@gmail.com
+        </p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright" data-lang-en="{{ site.data.sitecopy.footer.copyright.en }}" data-lang-vi="{{ site.data.sitecopy.footer.copyright.vi }}">
+        {{ site.data.sitecopy.footer.copyright.en }}
+      </p>
+    </div>
+  </div>
+</footer>

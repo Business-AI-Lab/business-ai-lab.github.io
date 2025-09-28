@@ -1,0 +1,62 @@
+title: "Business AI Lab"
+description: ""
+url: "https://business-ai-lab.github.io"
+baseurl: ""   # Change this to your repository name
+
+lang:
+  default: en
+  supported: [en, vi]
+
+brand:
+  logo_square: "/assets/images/logo/bai-logo.jpg"
+  logo_horizontal: "/assets/images/logo/bailab-logo-horizontal.png"
+  banner: "/assets/images/logo/bailab-banner.jpg"
+  favicon: "/favicon.ico"
+
+site_theme:
+  default: light
+  allow_toggle: true
+
+# Collections configuration
+collections:
+  projects:
+    output: true
+    permalink: /research/projects/:slug/
+  publications:
+    output: true
+    permalink: /research/publications/:slug/
+  members:
+    output: true
+    permalink: /members/:slug/
+  news:
+    output: true
+    permalink: /activities/news/:slug/
+  blogs:
+    output: true
+    permalink: /activities/blogs/:slug/
+  gatherings:
+    output: true
+    permalink: /opportunities/gatherings/:slug/
+  careers:
+    output: true
+    permalink: /opportunities/careers/:slug/
+  datasets:
+    output: true
+    permalink: /resources/data/:slug/
+  code:
+    output: true
+    permalink: /resources/code/:slug/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

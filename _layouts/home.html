@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{ site.brand.banner | relative_url }}')">
+  <div class="hero-content">
+    <h1 class="hero-title">{{ site.title }}</h1>
+    <p class="hero-subtitle" data-lang-en="{{ site.data.sitecopy.tagline.en }}" data-lang-vi="{{ site.data.sitecopy.tagline.vi }}">
+      {{ site.data.sitecopy.tagline.en }}
+    </p>
+  </div>
+</section>
+
+<section class="container section">
+  <h2 class="section-title" data-lang-en="{{ site.data.sitecopy.recent_projects.en }}" data-lang-vi="{{ site.data.sitecopy.recent_projects.vi }}">
+    {{ site.data.sitecopy.recent_projects.en }}
+  </h2>
+  <div class="projects-list-single">
+    {% for project in site.projects limit:4 %}
+      {% include card-project.html item=project %}
+    {% endfor %}
+  </div>
+  <div class="section-footer">
+    <a href="{{ '/research/projects/' | relative_url }}" class="btn btn-outline" data-lang-en="{{ site.data.sitecopy.view_all.en }}" data-lang-vi="{{ site.data.sitecopy.view_all.vi }}">
+      {{ site.data.sitecopy.view_all.en }}
+    </a>
+  </div>
+</section>
+
+{% include stats.html %}
+{% include partners-strip.html %}
+
+<section class="container section">
+  <div class="latest-content">
+    <div class="latest-news">
+      <h2 class="section-title" data-lang-en="{{ site.data.sitecopy.latest_news.en }}" data-lang-vi="{{ site.data.sitecopy.latest_news.vi }}">
+        {{ site.data.sitecopy.latest_news.en }}
+      </h2>
+      {% for news in site.news limit:3 %}
+        {% include card-news.html item=news %}
+      {% endfor %}
+    </div>
+    
+    <div class="latest-blogs">
+      <h2 class="section-title" data-lang-en="{{ site.data.sitecopy.latest_blogs.en }}" data-lang-vi="{{ site.data.sitecopy.latest_blogs.vi }}">
+        {{ site.data.sitecopy.latest_blogs.en }}
+      </h2>
+      {% for blog in site.blogs limit:3 %}
+        {% include card-blog.html item=blog %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

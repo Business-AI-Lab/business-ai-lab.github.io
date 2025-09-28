@@ -1,0 +1,29 @@
+<div class="card blog-card">
+  {% if include.item.thumb %}
+  <div class="card-thumb">
+    <img src="{{ include.item.thumb | relative_url }}" alt="{{ include.item.title.en }}" loading="lazy">
+  </div>
+  {% endif %}
+  
+  <div class="card-content">
+    <div class="card-date">{{ include.item.date | date: "%B %d, %Y" }}</div>
+    
+    <h3 class="card-title" data-lang-en="{{ include.item.title.en }}" data-lang-vi="{{ include.item.title.vi }}">
+      <a href="{{ include.item.url | relative_url }}">{{ include.item.title.en }}</a>
+    </h3>
+    
+    {% if include.item.summary %}
+    <p class="card-summary" data-lang-en="{{ include.item.summary.en }}" data-lang-vi="{{ include.item.summary.vi }}">
+      {{ include.item.summary.en }}
+    </p>
+    {% endif %}
+    
+    {% if include.item.author %}
+    <p class="card-author">By {{ include.item.author }}</p>
+    {% endif %}
+    
+    <a href="{{ include.item.url | relative_url }}" class="card-link" data-lang-en="{{ site.data.sitecopy.read_more.en }}" data-lang-vi="{{ site.data.sitecopy.read_more.vi }}">
+      {{ site.data.sitecopy.read_more.en }}
+    </a>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="container">
+  <article class="detail-content">
+    <header class="detail-header">
+      {% if page.thumb %}
+      <div class="detail-thumb">
+        <img src="{{ page.thumb | relative_url }}" alt="{{ page.title.en }}" loading="lazy">
+      </div>
+      {% endif %}
+      
+      <div class="detail-meta">
+        <h1 class="detail-title" data-lang-en="{{ page.title.en }}" data-lang-vi="{{ page.title.vi }}">
+          {{ page.title.en }}
+        </h1>
+        
+        {% if page.summary %}
+        <p class="detail-summary" data-lang-en="{{ page.summary.en }}" data-lang-vi="{{ page.summary.vi }}">
+          {{ page.summary.en }}
+        </p>
+        {% endif %}
+        
+        {% if page.date %}
+        <p class="detail-date">{{ page.date | date: "%B %d, %Y" }}</p>
+        {% endif %}
+        
+        {% if page.links %}
+        <div class="detail-links">
+          {% for link in page.links %}
+            <a href="{{ link[1] }}" class="btn btn-sm btn-outline" target="_blank">{{ link[0] | capitalize }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </header>
+    
+    <div class="detail-body">
+      <div class="content-en" data-lang-content="en">
+        {{ page.readmore.en | markdownify }}
+      </div>
+      <div class="content-vi" data-lang-content="vi" style="display: none;">
+        {{ page.readmore.vi | markdownify }}
+      </div>
+    </div>
+    
+    {% if page.images %}
+    <div class="detail-gallery">
+      {% for image in page.images %}
+        <img src="{{ image | relative_url }}" alt="Figure" loading="lazy">
+      {% endfor %}
+    </div>
+    {% endif %}
+  </article>
+</div>

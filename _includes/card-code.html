@@ -1,0 +1,32 @@
+<div class="card code-card">
+  <div class="card-content">
+    <h3 class="card-title" data-lang-en="{{ include.item.title.en }}" data-lang-vi="{{ include.item.title.vi }}">
+      <a href="{{ include.item.url | relative_url }}">{{ include.item.title.en }}</a>
+    </h3>
+    
+    {% if include.item.language %}
+    <p class="card-meta">💻 {{ include.item.language }}</p>
+    {% endif %}
+    
+    {% if include.item.license %}
+    <p class="card-meta">📄 {{ include.item.license }} License</p>
+    {% endif %}
+    
+    {% if include.item.summary %}
+    <p class="card-summary" data-lang-en="{{ include.item.summary.en }}" data-lang-vi="{{ include.item.summary.vi }}">
+      {{ include.item.summary.en }}
+    </p>
+    {% endif %}
+    
+    <div class="card-actions">
+      <a href="{{ include.item.url | relative_url }}" class="card-link" data-lang-en="{{ site.data.sitecopy.read_more.en }}" data-lang-vi="{{ site.data.sitecopy.read_more.vi }}">
+        {{ site.data.sitecopy.read_more.en }}
+      </a>
+      {% if include.item.repo_url %}
+      <a href="{{ include.item.repo_url }}" class="card-repo" target="_blank">
+        🔗 GitHub
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

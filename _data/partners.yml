@@ -1,0 +1,47 @@
+- name: "College of Technology NEU"
+  logo: "/assets/images/partners/nct-neu.png"
+  url: "https://nct.neu.edu.vn/"
+
+- name: "VNPT AI"
+  logo: "/assets/images/partners/vnpt-ai.png"
+  url: "https://vnptai.io/vi/"
+
+- name: "AIoT Lab - Phenikaa University"
+  logo: "/assets/images/partners/aiot-phenikaa.png"
+  url: "https://bailab.vn"
+
+- name: "National Economics University"
+  logo: "/assets/images/partners/neu.png"
+  url: "https://neu.edu.vn/"
+
+- name: "Phenikaa University"
+  logo: "/assets/images/partners/phenikaa.png"
+  url: "https://phenikaa-uni.edu.vn/"
+
+- name: "Bach Mai Hospital"
+  logo: "/assets/images/partners/bachmai-hospital.png"
+  url: "https://bachmai.gov.vn/"
+
+- name: "K Hospital"
+  logo: "/assets/images/partners/k-hospital.png"
+  url: "https://benhvienk.vn/"
+
+- name: "Heart Ha Noi Hospital"
+  logo: "/assets/images/partners/timHN-hospital.png"
+  url: "https://benhvientimhanoi.vn/"
+
+- name: "Nghe An Hospital"
+  logo: "/assets/images/partners/nghean-hospital.png"
+  url: "https://bvnghean.vn/"
+
+- name: "Ha Noi University of Science and Technology"
+  logo: "/assets/images/partners/hust.png"
+  url: "https://www.hust.edu.vn/"
+
+- name: "VinUniversity"
+  logo: "/assets/images/partners/vinuni.png"
+  url: "https://vinuni.edu.vn/"
+
+- name: "Mobifone"
+  logo: "/assets/images/partners/mobifone.png"
+  url: "https://mobifone.vn/"

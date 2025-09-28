@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="container">
+  <article class="page-content">
+    <header class="page-header">
+      <h1 class="page-title" data-lang-en="{{ page.title.en }}" data-lang-vi="{{ page.title.vi }}">
+        {{ page.title.en }}
+      </h1>
+      {% if page.summary %}
+      <p class="page-summary" data-lang-en="{{ page.summary.en }}" data-lang-vi="{{ page.summary.vi }}">
+        {{ page.summary.en }}
+      </p>
+      {% endif %}
+    </header>
+    
+    <div class="page-body">
+      <div class="content-en" data-lang-content="en">
+        {{ page.content_en | markdownify }}
+      </div>
+      <div class="content-vi" data-lang-content="vi" style="display: none;">
+        {{ page.content_vi | markdownify }}
+      </div>
+    </div>
+  </article>
+</div>

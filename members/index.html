@@ -1,0 +1,52 @@
+---
+layout: list
+title:
+  en: "Our Team"
+  vi: "Đội ngũ của chúng tôi"
+summary:
+  en: "Meet the talented researchers and students who make our work possible."
+  vi: "Gặp gỡ các nhà nghiên cứu và sinh viên tài năng làm cho công việc của chúng tôi trở thành hiện thực."
+---
+
+<!-- Core Team Members with profiles -->
+{% assign roles = "Lab Leader,Lab Teacher,Research Assistant,Alumni,Bachelor Students" | split: "," %}
+{% for role in roles %}
+  {% assign members_in_role = site.members | where: "role", role %}
+  {% if members_in_role.size > 0 %}
+    <section class="members-section">
+      <h2>{{ role }}</h2>
+      <div class="members-grid">
+        {% for member in members_in_role %}
+          {% include card-member.html item=member %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}
+
+<!-- Lab Members List -->
+<section class="members-section">
+  <h2 data-lang-en="Lab Members" data-lang-vi="Thành viên Lab">Lab Members</h2>
+  <p data-lang-en="Other members of our research lab" data-lang-vi="Các thành viên khác của phòng nghiên cứu">
+    Other members of our research lab
+  </p>
+  
+  {% assign lab_members = site.data.members | where: "role", "Lab Member" %}
+  
+  <div class="members-list-simple">
+    <div class="role-group">
+      <h3 class="role-title">Lab Members ({{ lab_members.size }})</h3>
+      <ul class="member-names">
+        {% for member in lab_members %}
+          <li data-lang-en="{{ member.name.en }}" data-lang-vi="{{ member.name.vi }}">{{ member.name.en }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+  <div class="members-stats-note">
+    <p data-lang-en="Our lab includes {{ site.data.members.size }} dedicated members working across various research areas in artificial intelligence and business applications." data-lang-vi="Lab của chúng tôi bao gồm {{ site.data.members.size }} thành viên tận tâm làm việc trong các lĩnh vực nghiên cứu khác nhau về trí tuệ nhân tạo và ứng dụng kinh doanh.">
+      Our lab includes <strong>{{ site.data.members.size }}</strong> dedicated members working across various research areas in artificial intelligence and business applications.
+    </p>
+  </div>
+</section>

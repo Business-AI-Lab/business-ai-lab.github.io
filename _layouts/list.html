@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="container">
+  <header class="page-header">
+    <div class="page-header-main">
+      <div class="page-title-section">
+        <h1 class="page-title" data-lang-en="{{ page.title.en }}" data-lang-vi="{{ page.title.vi }}">
+          {{ page.title.en }}
+        </h1>
+        {% if page.summary %}
+        <p class="page-summary" data-lang-en="{{ page.summary.en }}" data-lang-vi="{{ page.summary.vi }}">
+          {{ page.summary.en }}
+        </p>
+        {% endif %}
+      </div>
+      
+      <!-- Search Box in header -->
+      <div class="page-search-container">
+        <input 
+          type="text" 
+          id="search-input" 
+          class="page-search-input" 
+          placeholder="Search..." 
+          data-lang-en-placeholder="Search..." 
+          data-lang-vi-placeholder="Tìm kiếm..."
+        >
+        <svg class="page-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </div>
+    </div>
+  </header>
+  
+  <div class="list-content">
+    {{ content }}
+  </div>
+  
+  <div id="search-results" class="search-results" style="display: none;">
+    <!-- Search results will be populated by JavaScript -->
+  </div>
+</div>
+
+<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
