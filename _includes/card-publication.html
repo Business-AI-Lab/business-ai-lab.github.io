@@ -1,0 +1,51 @@
+<div class="card publication-card">
+  <div class="card-content">
+    <h3 class="card-title">
+      <a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a>
+    </h3>
+    
+    {% comment %} Display authors - extract from IEEE citation until first quote {% endcomment %}
+    {% if include.item.ieee %}
+    <div class="pub-authors">
+      {% assign authors_only = include.item.ieee | split: '"' | first | strip %}
+      {% comment %} Remove trailing comma if exists {% endcomment %}
+      {% if authors_only contains ',' %}
+        {% assign authors_clean = authors_only | split: ',' %}
+        {% assign final_authors = '' %}
+        {% for author in authors_clean %}
+          {% assign trimmed_author = author | strip %}
+          {% if final_authors == '' %}
+            {% assign final_authors = trimmed_author %}
+          {% else %}
+            {% assign final_authors = final_authors | append: ', ' | append: trimmed_author %}
+          {% endif %}
+        {% endfor %}
+        {% include highlight-members.html text=final_authors %}
+      {% else %}
+        {% include highlight-members.html text=authors_only %}
+      {% endif %}
+    </div>
+    {% endif %}
+    
+    {% if include.item.venue %}
+    <div class="pub-venue">{{ include.item.venue }}</div>
+    {% endif %}
+    
+    <div class="pub-year">{{ include.item.year }}</div>
+    
+    <div class="pub-links">
+      {% if include.item.doi %}
+      <a href="https://doi.org/{{ include.item.doi }}" class="btn btn-sm" target="_blank">DOI</a>
+      {% endif %}
+      {% if include.item.pdf %}
+      <a href="{{ include.item.pdf }}" class="btn btn-sm" target="_blank">PDF</a>
+      {% endif %}
+      {% if include.item.code %}
+      <a href="{{ include.item.code }}" class="btn btn-sm btn-outline" target="_blank">Code</a>
+      {% endif %}
+      {% if include.item.project %}
+      <a href="{{ '/research/projects/' | append: include.item.project | append: '/' | relative_url }}" class="btn btn-sm btn-outline">Project</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

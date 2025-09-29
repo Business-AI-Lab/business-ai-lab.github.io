@@ -1,0 +1,32 @@
+{% comment %}
+Helper to highlight lab member names in publication citations
+Usage: {% include highlight-members.html text=citation %}
+{% endcomment %}
+
+{% assign output_text = include.text %}
+
+{% comment %} 
+List of lab members to highlight - format: "Short Name:Full Name"
+Add new members here with their citation formats
+{% endcomment %}
+{% assign member_mappings = "T.-C. Vuong:Tuan-Cuong Vuong,T. V. Luong:Thien Van Luong,H. Vu:Huan Vu,N. T. K. Nguyen:Ngan Thi Kim Nguyen,N. T. Nguyen:Nghia Trong Nguyen,H. T. Ngo:Hoa Thai Ngo" | split: "," %}
+
+{% for mapping in member_mappings %}
+  {% assign parts = mapping | split: ":" %}
+  {% assign short_name = parts[0] | strip %}
+  {% assign full_name = parts[1] | strip %}
+  
+  {% comment %} Highlight short name format (more common in citations) {% endcomment %}
+  {% if output_text contains short_name %}
+    {% assign replacement = '<strong>' | append: short_name | append: '</strong>' %}
+    {% assign output_text = output_text | replace: short_name, replacement %}
+  {% endif %}
+  
+  {% comment %} Also check for full name format {% endcomment %}
+  {% if output_text contains full_name %}
+    {% assign replacement = '<strong>' | append: full_name | append: '</strong>' %}
+    {% assign output_text = output_text | replace: full_name, replacement %}
+  {% endif %}
+{% endfor %}
+
+{{ output_text }}

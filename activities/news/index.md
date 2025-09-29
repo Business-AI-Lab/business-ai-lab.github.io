@@ -9,7 +9,10 @@ summary:
 ---
 
 <div class="news-list">
-  {% for news in site.news %}
-    {% include card-news.html item=news %}
+  {% assign news_by_date = site.news | sort: 'date' | reverse %}
+  {% for news in news_by_date %}
+    <div class="news-item-wrapper">
+      {% include card-news.html item=news %}
+    </div>
   {% endfor %}
 </div>
