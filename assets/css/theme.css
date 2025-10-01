@@ -26,6 +26,7 @@
   padding: 2px 6px;
   padding-right: 6px;
   border-radius: 25px;
+  /* margin-top: 1px; */
 }
 
 .navbar-toggle {
@@ -188,6 +189,7 @@
 
 /* Hero Section */
 .hero {
+  margin-top: -30px; 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -289,6 +291,10 @@
   color: var(--text-secondary);
   margin-bottom: var(--spacing-md);
   line-height: var(--line-height-relaxed);
+}
+
+.gathering-card {
+  margin-bottom: 20px;
 }
 
 .card-tags {
@@ -508,6 +514,7 @@
   align-items: center;
   gap: var(--spacing-sm);
   margin: 0;
+  margin-top: 11px;
 }
 
 .header-lang-switcher .lang-btn {
@@ -538,7 +545,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: var(--spacing-xl);
-  margin-bottom: var(--spacing-2xl);
+  margin-bottom: var(--spacing-sm);
 }
 
 .page-title-section {
@@ -883,6 +890,10 @@
 .publication-card .btn-outline:hover {
   background: var(--primary);
   color: white;
+}
+
+.dataset-card {
+  margin-bottom: var(--spacing-lg);
 }
 
 /* Mobile responsive for horizontal cards */
