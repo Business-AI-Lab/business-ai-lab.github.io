@@ -1,5 +1,6 @@
 /* Site Header */
 .site-header {
+  margin-bottom: 30px;
   background: var(--bg-primary);
   border-bottom: 1px solid var(--border);
   position: sticky;
@@ -21,6 +22,10 @@
 .navbar-brand .brand-logo {
   height: 40px;
   width: auto;
+  background-color: white;
+  padding: 2px 6px;
+  padding-right: 6px;
+  border-radius: 25px;
 }
 
 .navbar-toggle {
@@ -214,6 +219,7 @@
 }
 
 .hero-title {
+  color: white;
   font-size: var(--text-4xl);
   font-weight: 700;
   margin-bottom: var(--spacing-lg);
@@ -221,6 +227,7 @@
 }
 
 .hero-subtitle {
+  color: whitesmoke;
   font-size: var(--text-lg);
   margin-bottom: var(--spacing-xl);
   opacity: 0.9;

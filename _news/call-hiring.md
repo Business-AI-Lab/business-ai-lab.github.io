@@ -1,59 +1,66 @@
 ---
 layout: detail
-date: 2024-11-20
-thumb: "https://images.pexels.com/photos/8566526/pexels-photo-8566526.jpeg"
+date: 2025-10-1
+thumb: "/assets/images/news/Gen03.png"
 title:
-  en: "Call for Applications: Business AI Lab — Gen 2"
-  vi: "Thông báo tuyển sinh Gen 2 — Business AI Lab"
+  en: "Call for Applications: Business AI Lab — Gen 3"
+  vi: "Thông báo tuyển thành viên Gen 3 — Business AI Lab"
 summary:
-  en: "Applications for the Lab’s second cohort are now open, featuring a 5-round selection that emphasizes discipline, persistence, and research passion."
-  vi: "Mở đơn tuyển sinh Gen 2 với 5 vòng tuyển chọn, nhấn mạnh kỷ luật, kiên trì và đam mê nghiên cứu."
+  en: "Applications for the Lab’s third cohort are now open, featuring a 5-round selection that emphasizes discipline, persistence, and research passion."
+  vi: "Mở đơn tuyển sinh Gen 3 với 5 vòng tuyển chọn, nhấn mạnh kỷ luật, kiên trì và đam mê nghiên cứu."
 readmore:
   en: |
-    We’re excited to announce admissions for **Business AI Lab — Gen 2**. The cohort focuses on impactful applied AI across **AI for Business**, **AI for Healthcare**, **AI for Policy Making**, and **Applied AI foundations** (computer vision, NLP, cybersecurity, wireless networks).
+    👉 **Are you a student passionate about scientific research in general, and technology in particular?**  
+    Do you want to meet peers and professors who share your interests to learn and grow together?  
+    At **Business AI Lab**, you will have the opportunity to engage in AI application research, guided by professors and talented fellow members. 💯  
 
-    ### Selection Process (5 Rounds)
-    1. **Application (Round 1)** — Submit CV/resume, (optional) transcript, portfolio/GitHub, and a short statement of interest.
-    2. **Essay (Round 2)** — A written essay on your research motivation, prior work, and a problem you want to tackle.
-    3. **Interview (Round 3)** — Technical and research-mindset discussion (problem solving, paper reading, communication).
-    4. **29-Day Discipline Challenge (Round 4)** — Daily progress log, weekly check-in; follow Lab norms (on-site ≥ **3 days/week**, attend **Thu 2:00 PM** seminar).
-    5. **30-Day SOTA Coding Challenge (Round 5)** — Reproduce or improve a strong baseline/SOTA; deliver code, a reproducible report, and a short demo.
+    ## 💥 Current key research focuses of the Lab include:
+    🔹 **AI in Economics and Business (Business AI)**  
+    🔹 **AI in Healthcare (Medical AI)**  
+    🔹 **AI in Policy Making**  
+    🔹 **Applied AI (Computer Vision, NLP, Security, 5G/6G)**  
 
-    ### What We Look For
-    - **Mindset**: discipline, perseverance, passion for research, ownership, integrity  
-    - **Foundations**: Python; data structures; probability/statistics; basic ML/Deep Learning  
-    - **Tools**: PyTorch/TensorFlow, Git, experiment tracking & reproducibility  
-    - **Research skills**: literature reading, experimental design, metrics, clear writing (EN/VN)
+    🧭 With the motto *“Attitude is more important than aptitude"*, **Business AI Lab** is looking for candidates who are ready to dedicate most of their time and effort to research. Our members come not only from Technology and Engineering backgrounds, but also from **Economics and Business**, currently working on topics like **AI in Policy Making**. Having programming skills or prior research experience is an advantage, but everyone is welcome to apply, start learning, and gain the chance to participate in scientific research within the Lab. 🧭  
 
-    ### Lab Culture & Expectations
-    - On-site work **≥ 3 days/week**
-    - Weekly advisor check-in
-    - **Lab seminar every Thursday at 2:00 PM**
+    ## 📍 Eligibility:
+    - Undergraduate students (any major) from universities in Hanoi.  
+    - No requirement for prior knowledge in technology or research.  
+    - Freshmen and sophomores are prioritized.  
 
-    ### How to Apply
-    Email **careers@lab.edu** with subject **“Application — Business AI Lab Gen 2”**, including your CV/resume, (optional) transcripts, and portfolio/GitHub. Early applications are encouraged; limited slots.
+    ## ⏳ Recruitment Timeline:
+    📌 **Round 1 - Application Submission** (01/10 - 08/10)  
+    📌 **Round 2 - Essay Writing** (18/10)  
+    📌 **Round 3 - Interview** (25/10)  
+    📌 **Round 4 - Discipline Challenge** (11/10 - 11/11)  
+    📌 **Round 5 - SOTA Challenge** (11/11 - 11/12)  
 
+    🔗 **APPLICATION FORM:** [Apply Now](https://forms.gle/Bd5TA83RFrJuorTj8)  
+    🌟 **FAQs:** [tinyurl.com/businessailab](https://tinyurl.com/businessailab) *(Includes last year’s test samples)*  
+    🎉 **Lab Introduction Slides:** [tinyurl.com/ypd75efe](https://tinyurl.com/ypd75efe)  
   vi: |
-    Business AI Lab chính thức **mở tuyển sinh Gen 2** cho các hướng **AI cho Kinh doanh**, **AI cho Y tế**, **AI cho Hoạch định Chính sách** và **AI Ứng dụng** (thị giác máy tính, NLP, an ninh mạng, mạng không dây) với định hướng tạo tác động thực tế.
+    👉 **Bạn là sinh viên có đam mê với nghiên cứu khoa học nói chung, công nghệ nói riêng?**  
+    Bạn muốn được gặp những bạn bè, thầy cô cùng chung chí hướng với mình để học hỏi và phát triển?  
+    Đến với **Business AI Lab**, bạn sẽ được tham gia nghiên cứu các chủ đề ứng dụng AI, dưới sự định hướng của các thầy cô cùng toàn thể các thành viên tài năng khác. 💯  
+    ## 💥 Một số trọng tâm nghiên cứu chính của Lab hiện nay bao gồm:
+    🔹 **AI trong Kinh tế và Kinh doanh (Business AI)**  
+    🔹 **AI trong Y tế (Medical AI)**  
+    🔹 **AI trong hoạch định chính sách (Policy Making)**  
+    🔹 **AI ứng dụng (Computer Vision, NLP, Security, 5G/6G)**  
+    
+    🧭 Với kim chỉ nam *“Thái độ quan trọng hơn trình độ"*, **Business AI Lab** muốn tìm kiếm những ứng viên sẵn sàng dành phần lớn thời gian và nỗ lực cho việc nghiên cứu. Các thành viên của Business AI Lab không chỉ đến từ các ngành Công nghệ - Kỹ thuật, mà còn tới từ các ngành **Kinh tế - Kinh doanh**, hiện đang nghiên cứu về lĩnh vực **AI trong hoạch định chính sách. Việc thông thạo các công cụ lập trình hay có sẵn nền tảng về nghiên cứu là một lợi thế, nhưng tất cả mọi người đều có thể tham gia ứng tuyển để bắt đầu học tập, có cơ hội được làm nghiên cứu khoa học trong Lab. 🧭  
+    ## 📍 Đối tượng:
+    - Sinh viên (mọi ngành) trực thuộc các trường ĐH trên địa bàn thành phố Hà Nội.  
+    - Không yêu cầu nền tảng về công nghệ hay nghiên cứu.  
+    - Ưu tiên các bạn sinh viên năm nhất, năm hai.  
 
-    ### Quy trình tuyển chọn (5 Vòng)
-    1. **Hồ sơ (Vòng 1)** — Gửi CV, (tuỳ chọn) bảng điểm, portfolio/GitHub và tuyên bố ngắn về định hướng.
-    2. **Viết luận (Vòng 2)** — Bài luận về động lực nghiên cứu, kinh nghiệm và bài toán muốn theo đuổi.
-    3. **Phỏng vấn (Vòng 3)** — Trao đổi về kỹ thuật và tư duy nghiên cứu (giải quyết vấn đề, đọc hiểu bài báo, giao tiếp).
-    4. **Thử thách kỷ luật 29 ngày (Vòng 4)** — Nhật ký tiến độ hằng ngày, gặp trực tiếp hằng tuần; tuân thủ quy định Lab (làm tại Lab **≥ 3 ngày/tuần**, tham dự **Seminar 14:00 Thứ Năm**).
-    5. **Thử thách code SOTA 30 ngày (Vòng 5)** — Tái lập hoặc cải thiện baseline/SOTA; nộp mã nguồn, báo cáo có thể tái lập và demo ngắn.
+    ## ⏳ Timeline các vòng:
+    📌 **Vòng 1 - Nộp hồ sơ** (01/10 - 08/10)  
+    📌 **Vòng 2 - Viết luận** (18/10)  
+    📌 **Vòng 3 - Phỏng vấn** (25/10)  
+    📌 **Vòng 4 - Thử thách tính kỷ luật** (11/10 - 11/11)  
+    📌 **Vòng 5 - Thử thách SOTA** (11/11 - 11/12)
 
-    ### Ứng viên phù hợp
-    - **Tư duy**: kỷ luật, kiên trì, đam mê nghiên cứu, tinh thần sở hữu, liêm chính  
-    - **Nền tảng**: Python; cấu trúc dữ liệu; xác suất/thống kê; ML/Deep Learning cơ bản  
-    - **Công cụ**: PyTorch/TensorFlow, Git, theo dõi thí nghiệm & tái lập  
-    - **Kỹ năng nghiên cứu**: đọc tổng quan, thiết kế thí nghiệm, chỉ số, viết rõ ràng (EN/VN)
-
-    ### Văn hóa & Kỳ vọng
-    - Làm trực tiếp tại Lab **≥ 3 ngày/tuần**
-    - Họp với giảng viên hằng tuần
-    - **Seminar Lab Thứ Năm, 14:00**
-
-    ### Cách thức ứng tuyển
-    Gửi email tới **careers@lab.edu** với tiêu đề **“Application — Business AI Lab Gen 2”**, đính kèm CV, (tuỳ chọn) bảng điểm và portfolio/GitHub. Khuyến khích nộp sớm; số lượng có hạn.
+    🔗 **LINK FORM ĐĂNG KÝ:** [Đăng ký ngay](https://forms.gle/Bd5TA83RFrJuorTj8)  
+    🌟 **Câu hỏi thường gặp:** [tinyurl.com/businessailab](https://tinyurl.com/businessailab) *(Có tiết lộ đề thi năm trước)*  
+    🎉 **Slide giới thiệu Lab:** [tinyurl.com/ypd75efe](https://tinyurl.com/ypd75efe)  
 ---
