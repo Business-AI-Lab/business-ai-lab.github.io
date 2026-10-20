@@ -1,0 +1,15 @@
+# Cài trên reverse proxy của trường có route tới LAN lab.
+# Thêm listen 443 ssl + ssl_certificate/ssl_certificate_key bằng cấu hình TLS
+# của trường trước khi công bố HTTPS. Khối dưới đây chỉ phục vụ HTTP.
+server {
+    listen 80;
+    server_name bailab.neu.edu.vn;
+
+    location / {
+        proxy_pass http://172.17.17.50:8080;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}

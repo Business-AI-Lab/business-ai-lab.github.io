@@ -4,7 +4,7 @@ name:
   en: "Tuan-Cuong Vuong"
   vi: "Vương Tuấn Cường"
 role: "Research Assistant"
-profile_image: "https://cngvng.github.io/assets/img/profile.png"
+profile_image: "https://cngvng.github.io/images/profile.png"
 web_personal: "https://cngvng.github.io"
 email: "cngvng.work@gmail.com"
 bio:

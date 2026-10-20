@@ -1,6 +1,6 @@
 title: "Business AI Lab"
 description: ""
-url: "https://business-ai-lab.github.io"
+url: "https://bailab.neu.edu.vn"
 baseurl: ""   # Change this to your repository name
 
 lang:
@@ -60,3 +60,8 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - deploy
+  - scripts
+  - package.json
+  - package-lock.json
+  - ecosystem.config.cjs

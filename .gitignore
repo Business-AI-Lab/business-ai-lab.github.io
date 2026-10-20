@@ -1,1 +1,10 @@
 .playwright-mcp/
+.runtime/
+.bundle/
+vendor/
+.jekyll-cache/
+.jekyll-metadata
+node_modules/
+deploy/releases/
+deploy/current
+deploy/.current-next

@@ -1,0 +1,13 @@
+{
+  "name": "bailab-lan-hosting",
+  "private": true,
+  "scripts": {
+    "deploy": "bash scripts/deploy.sh",
+    "status": "pm2 status",
+    "logs": "pm2 logs bailab-web"
+  },
+  "dependencies": {
+    "pm2": "7.0.4",
+    "serve": "14.2.6"
+  }
+}
