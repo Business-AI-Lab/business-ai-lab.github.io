@@ -595,6 +595,139 @@
     flex-direction: column;
     gap: var(--spacing-lg);
   }
+
+  /* Homepage research profile */
+  .home-hero {
+    position: relative;
+    margin-top: -30px;
+    min-height: 560px;
+    color: #fff;
+    background:
+      linear-gradient(90deg, rgba(7, 24, 48, .98) 0%, rgba(7, 24, 48, .9) 54%, rgba(7, 24, 48, .4) 100%),
+      url('/assets/images/logo/bailab-banner.jpg') center / cover;
+    overflow: hidden;
+  }
+
+  .home-hero::after {
+    content: "";
+    position: absolute;
+    width: 42vw;
+    height: 42vw;
+    right: -14vw;
+    bottom: -28vw;
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 50%;
+  }
+
+  .home-hero-grid {
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    align-items: center;
+    gap: var(--spacing-3xl);
+    position: relative;
+    z-index: 1;
+  }
+
+  .home-hero-copy { max-width: 720px; }
+  .eyebrow {
+    color: var(--primary);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    margin-bottom: var(--spacing-lg);
+  }
+  .home-hero .eyebrow { color: #8eddd4; }
+  .home-hero h1 {
+    color: #fff;
+    font-size: clamp(2.6rem, 6vw, 5.25rem);
+    letter-spacing: -.05em;
+    line-height: .98;
+    max-width: 760px;
+    margin-bottom: var(--spacing-xl);
+  }
+  .home-hero-lede {
+    color: rgba(255, 255, 255, .74);
+    font-size: 1.18rem;
+    line-height: 1.7;
+    max-width: 590px;
+  }
+  .home-hero-actions, .pi-links { display: flex; align-items: center; gap: var(--spacing-lg); flex-wrap: wrap; }
+  .text-link { font-weight: 700; }
+  .text-link-light { color: #fff; }
+  .text-link-light:hover { color: #8eddd4; }
+  .hero-credential {
+    align-self: end;
+    margin-bottom: 4.5rem;
+    padding: var(--spacing-lg) 0 0;
+    border-top: 1px solid rgba(255,255,255,.35);
+    display: grid;
+    gap: .45rem;
+    color: rgba(255,255,255,.7);
+    font-size: .86rem;
+  }
+  .hero-credential strong { color: #fff; font-size: 1.35rem; }
+  .credential-kicker, .portrait-label { color: #8eddd4; font-size: .68rem; font-weight: 700; letter-spacing: .14em; }
+  .credential-line { width: 32px; border-top: 2px solid #f4a261; margin: .4rem 0; }
+  .pi-section { padding-top: 5.5rem; padding-bottom: 5.5rem; }
+  .section-heading { max-width: 760px; margin-bottom: var(--spacing-2xl); }
+  .section-heading h2 { font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: -.04em; }
+  .pi-profile-card {
+    display: grid;
+    grid-template-columns: minmax(260px, .75fr) 1.25fr;
+    background: #f2f6f7;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  .pi-portrait { min-height: 430px; position: relative; background: #d7e5e5; }
+  .pi-portrait img { width: 100%; height: 100%; min-height: 430px; object-fit: cover; object-position: center; display: block; }
+  .portrait-label { position: absolute; left: 1.5rem; bottom: 1.35rem; color: #fff; text-shadow: 0 1px 5px #071830; }
+  .pi-profile-content { padding: clamp(2rem, 5vw, 4.5rem); align-self: center; }
+  .pi-role { color: var(--primary); font-weight: 700; font-size: .83rem; letter-spacing: .04em; }
+  .pi-profile-content h3 { font-size: clamp(1.7rem, 3vw, 2.7rem); letter-spacing: -.04em; }
+  .pi-profile-content > p:not(.pi-role) { max-width: 620px; font-size: 1.04rem; }
+  .pi-email { display: grid; gap: .15rem; width: fit-content; margin: 1.5rem 0 0; padding: .8rem 1rem .8rem 0; border-top: 1px solid #cad9db; color: var(--text-primary); }
+  .pi-email:hover { color: var(--primary); text-decoration: none; }
+  .pi-email-label { color: var(--primary); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .pi-email strong { font-size: 1.02rem; }
+  .pi-email-affiliation { color: var(--text-muted); font-size: .75rem; }
+  .pi-links { margin-top: var(--spacing-xl); }
+  .achievement-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--border); }
+  .achievement-item { padding: 1.7rem 1.5rem 1.7rem 0; display: grid; gap: .3rem; border-right: 1px solid var(--border); margin-right: 1.5rem; }
+  .achievement-item:last-child { border-right: 0; margin-right: 0; }
+  .achievement-item strong { color: var(--primary); font-size: 2.1rem; letter-spacing: -.05em; }
+  .achievement-item span { color: var(--text-secondary); font-size: .87rem; line-height: 1.45; }
+  .research-band, .members-band { background: #f2f6f7; }
+  .section-heading-split { max-width: none; display: flex; justify-content: space-between; align-items: end; gap: 2rem; }
+  .research-pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #cad9db; border: 1px solid #cad9db; }
+  .research-pillars article { background: #f2f6f7; padding: 2rem; min-height: 240px; }
+  .research-pillars article > span { color: var(--accent); font-size: .75rem; font-weight: 700; }
+  .research-pillars h3 { font-size: 1.35rem; margin-top: 2.8rem; }
+  .research-pillars p { font-size: .93rem; }
+  .activity-section { padding-bottom: 6rem; }
+  .activity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .activity-card { min-height: 260px; padding: 1.75rem; border: 1px solid var(--border); border-radius: var(--radius-lg); display: flex; flex-direction: column; justify-content: space-between; transition: var(--transition); }
+  .activity-card:hover { text-decoration: none; transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+  .activity-card h3 { font-size: 1.35rem; margin: 2rem 0; }
+  .activity-date { font-size: .72rem; color: var(--text-muted); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .activity-card-accent { background: var(--primary); border-color: var(--primary); }
+  .activity-card-accent h3, .activity-card-accent .activity-date, .activity-card-accent .text-link { color: #fff; }
+  .members-band .section { padding-bottom: 6rem; }
+  .member-preview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .member-preview-grid .member-card { background: var(--bg-primary); }
+
+  @media (max-width: 768px) {
+    .home-hero, .home-hero-grid { min-height: 650px; }
+    .home-hero-grid { grid-template-columns: 1fr; align-content: center; gap: 2rem; }
+    .hero-credential { align-self: start; margin-bottom: 0; width: min(100%, 300px); }
+    .pi-profile-card { grid-template-columns: 1fr; }
+    .pi-portrait, .pi-portrait img { min-height: 350px; height: 350px; }
+    .achievement-grid { grid-template-columns: repeat(2, 1fr); }
+    .achievement-item:nth-child(2) { border-right: 0; margin-right: 0; }
+    .section-heading-split { display: block; }
+    .section-heading-split > .text-link { display: inline-block; margin-top: .5rem; }
+    .research-pillars, .activity-grid, .member-preview-grid { grid-template-columns: 1fr; }
+  }
   
   .page-search-container {
     width: 100%;

@@ -4,7 +4,7 @@ name:
   en: "Dr. Thien Van Luong"
   vi: "TS. Lương Văn Thiện"
 role: "Lab Leader"
-profile_image: "https://fda.neu.edu.vn/wp-content/uploads/2024/08/luongvanthien.jpg"
+profile_image: "https://fda.neu.edu.vn/wp-content/uploads/2024/08/TS.-Luong-Van-Thien-anh-2-scaled-e1773728619822.jpg"
 web_personal: "https://tvluong.wordpress.com/"
 email: "thienlv@neu.edu.vn"
 affiliations: ["Business AI Lab", "National Economics University"]

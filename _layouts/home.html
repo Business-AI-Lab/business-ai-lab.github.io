@@ -2,51 +2,93 @@
 layout: default
 ---
 
-<section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{ site.brand.banner | relative_url }}')">
-  <div class="hero-content">
-    <h1 class="hero-title">{{ site.title }}</h1>
-    <p class="hero-subtitle" data-lang-en="{{ site.data.sitecopy.tagline.en }}" data-lang-vi="{{ site.data.sitecopy.tagline.vi }}">
-      {{ site.data.sitecopy.tagline.en }}
-    </p>
-  </div>
-</section>
-
-<section class="container section">
-  <h2 class="section-title" data-lang-en="{{ site.data.sitecopy.recent_projects.en }}" data-lang-vi="{{ site.data.sitecopy.recent_projects.vi }}">
-    {{ site.data.sitecopy.recent_projects.en }}
-  </h2>
-  <div class="projects-list-single">
-    {% for project in site.projects limit:4 %}
-      {% include card-project.html item=project %}
-    {% endfor %}
-  </div>
-  <div class="section-footer">
-    <a href="{{ '/research/projects/' | relative_url }}" class="btn btn-outline" data-lang-en="{{ site.data.sitecopy.view_all.en }}" data-lang-vi="{{ site.data.sitecopy.view_all.vi }}">
-      {{ site.data.sitecopy.view_all.en }}
-    </a>
-  </div>
-</section>
-
-{% include stats.html %}
-{% include partners-strip.html %}
-
-<section class="container section">
-  <div class="latest-content">
-    <div class="latest-news">
-      <h2 class="section-title" data-lang-en="{{ site.data.sitecopy.latest_news.en }}" data-lang-vi="{{ site.data.sitecopy.latest_news.vi }}">
-        {{ site.data.sitecopy.latest_news.en }}
-      </h2>
-      {% for news in site.news limit:3 %}
-        {% include card-news.html item=news %}
-      {% endfor %}
+<section class="home-hero">
+  <div class="container home-hero-grid">
+    <div class="home-hero-copy">
+      <p class="eyebrow" data-lang-en="BUSINESS AI LAB · NATIONAL ECONOMICS UNIVERSITY" data-lang-vi="BUSINESS AI LAB · ĐẠI HỌC KINH TẾ QUỐC DÂN">BUSINESS AI LAB · NATIONAL ECONOMICS UNIVERSITY</p>
+      <h1 data-lang-en="Researching AI for decisions that matter." data-lang-vi="Nghiên cứu AI cho những quyết định có ý nghĩa.">Researching AI for decisions that matter.</h1>
+      <p class="home-hero-lede" data-lang-en="We build rigorous, deployable artificial intelligence for business, finance, healthcare and public policy." data-lang-vi="Chúng tôi phát triển trí tuệ nhân tạo có nền tảng học thuật vững chắc và khả năng ứng dụng trong kinh doanh, tài chính, y tế và chính sách công.">We build rigorous, deployable artificial intelligence for business, finance, healthcare and public policy.</p>
+      <div class="home-hero-actions">
+        <a class="btn btn-primary" href="#pi-profile" data-lang-en="Meet our PI" data-lang-vi="Hồ sơ trưởng lab">Meet our PI</a>
+        <a class="text-link text-link-light" href="{{ '/research/publications/' | relative_url }}" data-lang-en="Explore publications →" data-lang-vi="Xem công bố →">Explore publications →</a>
+      </div>
     </div>
-    
-    <div class="latest-blogs">
-      <h2 class="section-title" data-lang-en="{{ site.data.sitecopy.latest_blogs.en }}" data-lang-vi="{{ site.data.sitecopy.latest_blogs.vi }}">
-        {{ site.data.sitecopy.latest_blogs.en }}
-      </h2>
-      {% for blog in site.blogs limit:3 %}
-        {% include card-blog.html item=blog %}
+    <div class="hero-credential">
+      <span class="credential-kicker">PI PROFILE</span>
+      <strong>Dr. Thien Van Luong</strong>
+      <span data-lang-en="Founder & Lab Leader" data-lang-vi="Nhà sáng lập & Trưởng lab">Founder & Lab Leader</span>
+      <span class="credential-line"></span>
+      <span data-lang-en="National Economics University · Vietnam" data-lang-vi="Đại học Kinh tế Quốc dân · Việt Nam">National Economics University · Vietnam</span>
+    </div>
+  </div>
+</section>
+
+<section class="container section pi-section" id="pi-profile">
+  <div class="section-heading">
+    <p class="eyebrow" data-lang-en="01 · PRINCIPAL INVESTIGATOR" data-lang-vi="01 · TRƯỞNG NHÓM NGHIÊN CỨU">01 · PRINCIPAL INVESTIGATOR</p>
+    <h2 data-lang-en="A research profile with international reach." data-lang-vi="Hồ sơ nghiên cứu với tầm ảnh hưởng quốc tế.">A research profile with international reach.</h2>
+  </div>
+  <div class="pi-profile-card">
+    <div class="pi-portrait">
+      <img src="https://fda.neu.edu.vn/wp-content/uploads/2024/08/TS.-Luong-Van-Thien-anh-2-scaled-e1773728619822.jpg" alt="TS. Lương Văn Thiện" loading="eager">
+      <span class="portrait-label">BUSINESS AI LAB</span>
+    </div>
+    <div class="pi-profile-content">
+      <p class="pi-role" data-lang-en="Dr. Thien Van Luong · Founder & Lab Leader" data-lang-vi="TS. Lương Văn Thiện · Nhà sáng lập & Trưởng lab">Dr. Thien Van Luong · Founder & Lab Leader</p>
+      <h3 data-lang-en="Connecting foundational AI with real-world impact." data-lang-vi="Kết nối AI nền tảng với tác động thực tiễn.">Connecting foundational AI with real-world impact.</h3>
+      <p data-lang-en="Dr. Thien Van Luong is a lecturer at the Faculty of Data Science and Artificial Intelligence, National Economics University, and the founder of Business AI Lab. His work spans applied AI for business and finance, computer vision, NLP, IoT and advanced wireless communications." data-lang-vi="TS. Lương Văn Thiện là giảng viên Khoa Khoa học Dữ liệu và Trí tuệ Nhân tạo, Đại học Kinh tế Quốc dân, đồng thời là nhà sáng lập Business AI Lab. Hướng nghiên cứu của thầy trải rộng từ AI ứng dụng trong kinh doanh và tài chính đến thị giác máy tính, NLP, IoT và truyền thông không dây tiên tiến.">Dr. Thien Van Luong is a lecturer at the Faculty of Data Science and Artificial Intelligence, National Economics University, and the founder of Business AI Lab. His work spans applied AI for business and finance, computer vision, NLP, IoT and advanced wireless communications.</p>
+      <a class="pi-email" href="mailto:thienlv@neu.edu.vn"><span class="pi-email-label" data-lang-en="Academic contact" data-lang-vi="Liên hệ học thuật">Academic contact</span><strong>thienlv@neu.edu.vn</strong><span class="pi-email-affiliation" data-lang-en="National Economics University · Verified institutional address" data-lang-vi="Đại học Kinh tế Quốc dân · Email tổ chức">National Economics University · Verified institutional address</span></a>
+      <div class="pi-links">
+        <a class="btn btn-outline" href="https://tvluong.wordpress.com/" target="_blank" rel="noopener" data-lang-en="Personal website ↗" data-lang-vi="Website cá nhân ↗">Personal website ↗</a>
+        <a class="text-link" href="{{ '/members/dr-thien-van-luong/' | relative_url }}" data-lang-en="Full academic profile →" data-lang-vi="Hồ sơ học thuật đầy đủ →">Full academic profile →</a>
+      </div>
+    </div>
+  </div>
+  <div class="achievement-grid">
+    <div class="achievement-item"><strong>50+</strong><span data-lang-en="peer-reviewed publications" data-lang-vi="công bố khoa học quốc tế">peer-reviewed publications</span></div>
+    <div class="achievement-item"><strong>2022</strong><span data-lang-en="Golden Globe Award for Science & Technology" data-lang-vi="Giải thưởng Quả cầu vàng KHCN">Golden Globe Award for Science & Technology</span></div>
+    <div class="achievement-item"><strong>2×</strong><span data-lang-en="AI City Challenge champion · 2024 & 2025" data-lang-vi="Quán quân AI City Challenge · 2024 & 2025">AI City Challenge champion · 2024 & 2025</span></div>
+    <div class="achievement-item"><strong>Q1</strong><span data-lang-en="IEEE Transactions / Letters research" data-lang-vi="công trình trên IEEE Transactions / Letters">IEEE Transactions / Letters research</span></div>
+  </div>
+</section>
+
+<section class="research-band">
+  <div class="container section">
+    <div class="section-heading section-heading-split">
+      <div>
+        <p class="eyebrow" data-lang-en="02 · RESEARCH AGENDA" data-lang-vi="02 · CHƯƠNG TRÌNH NGHIÊN CỨU">02 · RESEARCH AGENDA</p>
+        <h2 data-lang-en="From intelligent systems to better decisions." data-lang-vi="Từ hệ thống thông minh đến quyết định tốt hơn.">From intelligent systems to better decisions.</h2>
+      </div>
+      <a class="text-link" href="{{ '/research/projects/' | relative_url }}" data-lang-en="View all research →" data-lang-vi="Xem toàn bộ nghiên cứu →">View all research →</a>
+    </div>
+    <div class="research-pillars">
+      <article><span>01</span><h3 data-lang-en="AI for Business & Finance" data-lang-vi="AI cho Kinh doanh & Tài chính">AI for Business & Finance</h3><p data-lang-en="Forecasting, decision intelligence and trustworthy machine learning for complex markets." data-lang-vi="Dự báo, trí tuệ quyết định và học máy đáng tin cậy cho các thị trường phức tạp.">Forecasting, decision intelligence and trustworthy machine learning for complex markets.</p></article>
+      <article><span>02</span><h3 data-lang-en="Computer Vision & NLP" data-lang-vi="Thị giác máy tính & NLP">Computer Vision & NLP</h3><p data-lang-en="Turning visual and language data into measurable insight for people and organisations." data-lang-vi="Chuyển dữ liệu hình ảnh và ngôn ngữ thành insight có thể đo lường cho tổ chức và cộng đồng.">Turning visual and language data into measurable insight for people and organisations.</p></article>
+      <article><span>03</span><h3 data-lang-en="Connected Intelligent Systems" data-lang-vi="Hệ thống thông minh kết nối">Connected Intelligent Systems</h3><p data-lang-en="AIoT, cyber-physical systems and next-generation wireless communication." data-lang-vi="AIoT, hệ thống cyber-physical và truyền thông không dây thế hệ mới.">AIoT, cyber-physical systems and next-generation wireless communication.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="container section activity-section">
+  <div class="section-heading section-heading-split">
+    <div><p class="eyebrow" data-lang-en="03 · LAB IN ACTION" data-lang-vi="03 · HOẠT ĐỘNG CỦA LAB">03 · LAB IN ACTION</p><h2 data-lang-en="Research that moves beyond the page." data-lang-vi="Nghiên cứu không dừng lại trên trang giấy.">Research that moves beyond the page.</h2></div>
+    <a class="text-link" href="{{ '/activities/news/' | relative_url }}" data-lang-en="All activities →" data-lang-vi="Tất cả hoạt động →">All activities →</a>
+  </div>
+  <div class="activity-grid">
+    {% for news in site.news limit:2 %}
+      <a class="activity-card" href="{{ news.url | relative_url }}"><span class="activity-date">{{ news.date | date: "%b %Y" }}</span><h3>{{ news.title.en }}</h3><span class="text-link" data-lang-en="Read story →" data-lang-vi="Đọc bài viết →">Read story →</span></a>
+    {% endfor %}
+    <a class="activity-card activity-card-accent" href="{{ '/opportunities/careers/' | relative_url }}"><span class="activity-date">OPEN DOOR</span><h3 data-lang-en="Join a lab built for ambitious research." data-lang-vi="Tham gia một lab dành cho nghiên cứu tham vọng.">Join a lab built for ambitious research.</h3><span class="text-link" data-lang-en="See opportunities →" data-lang-vi="Xem cơ hội →">See opportunities →</span></a>
+  </div>
+</section>
+
+<section class="members-band">
+  <div class="container section">
+    <div class="section-heading section-heading-split"><div><p class="eyebrow" data-lang-en="04 · THE PEOPLE" data-lang-vi="04 · CON NGƯỜI">04 · THE PEOPLE</p><h2 data-lang-en="A collaborative research community." data-lang-vi="Một cộng đồng nghiên cứu hợp tác.">A collaborative research community.</h2></div><a class="text-link" href="{{ '/members/' | relative_url }}" data-lang-en="Meet the team →" data-lang-vi="Gặp gỡ đội ngũ →">Meet the team →</a></div>
+    <div class="member-preview-grid">
+      {% assign team = site.members | where_exp: "member", "member.role != 'Lab Leader'" %}
+      {% for member in team limit:3 %}
+        {% include card-member.html item=member %}
       {% endfor %}
     </div>
   </div>
