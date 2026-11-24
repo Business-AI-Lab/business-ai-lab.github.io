@@ -42,6 +42,8 @@ publications: ["sample"]
 
 ## Contact
 
-- **Email**: thienlv@neu.edu.vn
+- **Email**: [thienlv@neu.edu.vn](mailto:thienlv@neu.edu.vn)
+- **NEU Institutional Profile**: [fda.neu.edu.vn/fda-members/ts-luong-van-thien/](https://fda.neu.edu.vn/fda-members/ts-luong-van-thien/)
 - **Personal Website**: [tvluong.wordpress.com](https://tvluong.wordpress.com/)
+- **Google Scholar**: [Publications & Citations](https://scholar.google.com.vn/citations?user=Gi4858sAAAAJ&hl=en)
 - **Institution**: Faculty of Data Science and AI, National Economics University, Hanoi, Vietnam
